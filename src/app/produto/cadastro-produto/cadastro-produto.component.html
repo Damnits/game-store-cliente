@@ -1,5 +1,5 @@
 <h1>Tela de cadastro de produtos</h1>
-<form [formGroup]="cadastroForm" (click)="onSubmit()">
+<form [formGroup]="productForm">
   <div class="input-group mb-3">
     <input formControlName="title" ngDefaultControl type="text"  placeholder="Titulo do jogo">
   </div>
@@ -16,5 +16,5 @@
     <input formControlName="quantity" ngDefaultControl type="number"  placeholder="Quantnameade">
   </div>
 </form>
-  <button type="button" class="btn btn-primary">Cadastrar</button>
+  <button type="button" (click)="onSubmit()" class="btn btn-primary">Cadastrar</button>
 

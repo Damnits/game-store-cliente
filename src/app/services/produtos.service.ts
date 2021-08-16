@@ -7,7 +7,7 @@ import {HttpClient} from '@angular/common/http';
   providedIn: 'root'
 })
 export class ProdutosService {
-  URL_PRODUTOS = 'http://localhost:3000/produtos';
+  URL_PRODUTOS = 'http://localhost:8080/gamestore/products';
 
   constructor(private httpClient: HttpClient) { }
   listar(): Observable<Produto[]> {
