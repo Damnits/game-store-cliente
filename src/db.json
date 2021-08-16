@@ -1,0 +1,32 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "title": "God of War",
+      "value": 200,
+      "price": 190,
+      "description": "Kratos and his son Atreus embark in a journey through the norse land",
+      "quantity": 50
+    },
+    {
+      "id": 2,
+      "title": "Red Dead Redemption",
+      "value": 300,
+      "price": 250,
+      "description": "Play as a cowboy in the US",
+      "quantity": 75
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    }
+  ]
+}
