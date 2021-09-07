@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ProdutosService} from "../../services/produtos.service";
+import {ProdutosService} from "../../shared/services/produtos.service";
 import {Router} from "@angular/router";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 
@@ -17,8 +17,9 @@ export class CadastroProdutoComponent{
               private roteador: Router) {
     this.productForm = this.fb.group({
       title: ["", [Validators.required]],
-      value: ["", [Validators.required]],
-      price: ["", [Validators.required]],
+      imageUrl: ["", [Validators.required]],
+      costPrice: ["", [Validators.required]],
+      sellPrice: ["", [Validators.required]],
       description: [""],
       quantity: ["", [Validators.required]]
     })

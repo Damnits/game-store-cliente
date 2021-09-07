@@ -1,0 +1,23 @@
+<h1>Clientes</h1>
+<table class="table" [(ngModel)]="clientes">
+  <thead>
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">Email</th>
+      <th scope="col">Senha</th>
+      <th scope="col">CPF</th>
+      <th scope="col">Editar</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let items of clientes">
+    <div *ngIf="!clientes">Nada a mostrar</div>
+
+    <tr>
+      <td>{{items.name}}</td>
+      <td>{{items.email}}</td>
+      <td>{{items.password}}</td>
+      <td>{{items.cpf}}</td>
+      <td><button type="button" class="btn btn-secondary"><i class="bi bi-pencil-square"></i></button></td>
+    </tr>
+  </tbody>
+</table>

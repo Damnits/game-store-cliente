@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Produto} from "../../shared/models/produto";
-import {ProdutosService} from "../../services/produtos.service";
+import { Produto } from "../../shared/models/produto";
+import { ProdutosService } from "../../shared/services/produtos.service";
 
 @Component({
   selector: 'app-listar-produtos',
@@ -15,7 +15,7 @@ export class ListarProdutosComponent implements OnInit {
 
   ngOnInit(): void {
     this.produtoService.listar().subscribe(
-      produtos => this.produtos = produtos
+      objs => this.produtos = objs
     )
   }
 

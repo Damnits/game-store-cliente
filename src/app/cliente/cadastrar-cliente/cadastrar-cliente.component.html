@@ -1,0 +1,16 @@
+<h1>Cadastro de clientes</h1>
+<form [formGroup]="form">
+  <div class="input-group mb-3">
+    <input formControlName="name" ngDefaultControl type="text" placeholder="Nome">
+  </div>
+  <div class="input-group mb-3">
+    <input formControlName="email" ngDefaultControl type="text" placeholder="Email">
+  </div>
+  <div class="input-group mb-3">
+    <input formControlName="password" ngDefaultControl type="text" placeholder="Senha">
+  </div>
+  <div class="input-group mb-3">
+    <input formControlName="cpf" ngDefaultControl type="text" placeholder="CPF">
+  </div>
+</form>
+<button type="button" (click)="onSubmit()" class="btn btn-primary">Cadastrar</button>

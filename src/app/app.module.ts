@@ -5,18 +5,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { NavigatorComponent } from './navigator/navigator.component';
-import {ProdutoModule} from "./produto/produto.module";
-import {HttpClientModule} from "@angular/common/http";
+import { ProdutoModule } from "./produto/produto.module";
+import { ClienteModule } from "./cliente/cliente.module";
+import { HttpClientModule } from "@angular/common/http";
+import { HomeComponent } from './home/home.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     NavigatorComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ProdutoModule,
-    HttpClientModule,
+    ClienteModule,
+    HttpClientModule
   ],
   providers: [
 

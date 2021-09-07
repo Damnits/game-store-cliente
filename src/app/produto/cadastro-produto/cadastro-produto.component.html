@@ -1,19 +1,19 @@
-<h1>Tela de cadastro de produtos</h1>
+<h1>Cadastro de produtos</h1>
 <form [formGroup]="productForm">
   <div class="input-group mb-3">
     <input formControlName="title" ngDefaultControl type="text"  placeholder="Titulo do jogo">
   </div>
   <div class="input-group mb-3">
-    <input formControlName="value" ngDefaultControl type="number" placeholder="Valor">
+    <input formControlName="costPrice" ngDefaultControl type="number" placeholder="Preço de custo">
   </div>
   <div class="input-group mb-3">
-    <input formControlName="price" ngDefaultControl type="number"  placeholder="Preço">
+    <input formControlName="sellPrice" ngDefaultControl type="number"  placeholder="Preço de venda">
   </div>
   <div class="input-group mb-3">
     <input formControlName="description" ngDefaultControl type="text"  placeholder="Descrição">
   </div>
   <div class="input-group mb-3">
-    <input formControlName="quantity" ngDefaultControl type="number"  placeholder="Quantnameade">
+    <input formControlName="quantity" ngDefaultControl type="number"  placeholder="Quantidade">
   </div>
 </form>
   <button type="button" (click)="onSubmit()" class="btn btn-primary">Cadastrar</button>
