@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt_BR" xmlns:th="www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<!--Bootstrap core CSS -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+
+<title>RoyalBet - Cadastro de Usuário</title>
+</head>
+<body>
+	<main role="main" class="container">
+		<div class="starter-template">
+			<div class="col-md-8 order-md-1">
+				<h1 class="mb-3">Cadastro de Usuário</h1>
+				<form>
+					<div class="flex-column">
+						<div class="col-md-10 mb-3">
+							<input class="col-md-6 mb-3 form-control input-group" ngDefaultControl type="text"  mask="000.000.000-00" 
+								placeholder="CPF"/>
+							
+						</div>
+					</div>
+					<div class="flex-column">
+						<div class="col-md-10 mb-3">
+							<input class="col-md-6 mb-3 form-control input-group" ngDefaultControl type="text"
+								placeholder="Nome">
+							
+						</div>
+
+
+					</div>
+					<div class="flex-column">
+						<div class="col-md-10 mb-3">
+							<input class="col-md-6 mb-3 form-control input-group" ngDefaultControl type="email"
+								placeholder="Email" />
+							
+						</div>
+
+					</div>
+					<div class="flex-column">
+						<div class="col-md-10 mb-3">
+							<input class="col-md-6 mb-3 form-control input-group" ngDefaultControl
+								type="password" placeholder="Digite sua senha"/>
+						
+						</div>
+					</div>
+					<hr class="mb-4">
+					<div class="flex-column">
+						<button class="col-md-3 mb-3 btn btn-success btn-lg btn-block"
+							type="submit">Salvar</button>
+						<a  class="link-secondary" routerLink="">Cancelar</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</main>
+</body>
+
+</html>
